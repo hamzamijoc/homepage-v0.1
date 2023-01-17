@@ -1,0 +1,141 @@
+/* 09/06/2017 */
+/* by hhun73r */
+
+/* hide-scrollbar */
+::-webkit-scrollbar {
+	display: none;
+}
+
+::placeholder {
+	color:				black;
+	font-size:		1em;
+	text-shadow:	0px 0px 1px black;
+}
+body {
+	margin:	0;
+	font-family: monospace;
+	background-color: grey;	
+	/* background-image: url("../img/kakanj.jpg"); 	 */
+	/* background-image: url("../img/kakanj.jpg"); 	 */
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	text-align:	center;
+}
+
+
+
+
+/* clock class */
+/* .clock { */
+	/* position:		fixed; */
+	/* top:				15%; */
+	/* margin-top:	5%; */
+	/* width:			100%; */
+	/* text-align:	center; */
+	/* display:		inline-block; */
+/* } */
+
+.today, .date, .time {
+	padding-left:	.5em;
+	font-size:		3.5em;
+	font-family:	monospace;
+	font-style:		italic;
+	color:				black;
+	text-shadow:	0px 0px 3px black;
+	display:			inline-block;
+}
+
+.today:hover, .date:hover, .time:hover {
+	transform: scale(1.1);
+	color: red;
+}
+
+
+.trazi {
+	margin:				0;
+	margin-top:		5%;
+	width:				100%;
+	text-align:		center;
+	display:			inline-block;
+}
+
+.ttext {
+	margin:						0;
+	/* margin-top:				5%; */
+	text-align:				center;
+	width: 						77%;
+	border:						none;
+	overflow:					hidden;	
+	outline:					none;
+	font-family:			monospace;
+	font-size:				1.5em;
+	color:						black;
+	text-shadow:			0px 0px 1px black;
+	background-color:	transparent;
+	opacity:					0;
+	transition:				opacity .5s ease-in-out;
+	/* border-top:				1px dashed black; */
+	border-bottom:		1px dotted black;
+}
+
+.trazi, .ttext:focus, .ttext:hover { opacity: 1; }
+
+.panel {
+	margin: 0;
+	width: 100%;
+	height:	47px;
+	position: fixed;
+	overflow: none;
+	bottom: 0%;
+	
+	text-align: center;
+	border-top: 1px solid darkblue;
+	/* box-shadow: 17px 7px 31px 1px darkblue; */
+}
+
+.links {
+	margin: 7px;
+	width:	33px;
+	height:	33px;
+	line-height: 55px;
+	
+	text-decoration: none;
+	background-color: #00000011;	
+	
+	font-family: monospace;
+	font-size: 1.5em;
+	color: #00000077;
+	transition: transform .5s ease-in-out, background-color .5s ease-in-out, border-color .5s ease-in-out, color .5s ease-in-out;
+	display: inline-block;
+	border: 1px solid #00000011;
+}
+
+.links:hover {
+	transform:	scale(1.3);
+	background-color: #000000CC;
+	color: #00FF00CC;
+}
+
+.links:focus {
+	outline-color: transparent;
+	transform:	scale(1.3);
+	background-color: #000000CC;
+	border-color: #000000CC;
+	color: #00FF00CC;
+}
+
+.start {
+	float:	left;
+	margin:	7px;
+	width:	33px;
+	height:	33px;
+	transition: transform .5s ease-in-out, border-color .5s ease-in-out;
+	border: 	1px solid red;
+}
+
+.start:hover {
+	transform: scale(1.1);
+	border-color:	purple;
+}
